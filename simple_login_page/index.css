@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
+*{
+	box-sizing: border-box;
+	font-family:"Andika New Basic";
+}
+html, body{
+	margin:0;
+}
+.bodyContainer{
+background-image: url("../images/form.jpg");
+height:100vh;
+width:100vw;
+min-width:1038px;
+background-size: cover;
+background-position: center;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+.loginContainer
+{
+	background-color: hsla(201,100%,6%,0.6);
+	padding:50px 30px;
+	min-width:100px;
+	width:30%;
+	max-width:600px;
+}
+h3{
+	margin:0;
+	color:white;
+	text-align:center;
+	margin-bottom:40px;
+	font-size:1.9em;
+	font-weight:normal;
+}
+.igroup{
+	display:flex;
+	flex-direction:column;
+	margin-bottom: 20px;
+}
+.igroup label{
+color:white;
+font-weight: lighter;
+font-size: 1em;
+margin-bottom: 5px;
+
+}
+.igroup input{
+font-size: 0.8em ;
+padding:.1em .9em;
+border: 2px solid hsla(201,100%,6%);
+background-color:hsla(201,100%,6%,0.2);
+outline:none;
+border-radius: 5px;
+color:white;
+font-weight:lighter;
+min-height:3.5em;
+
+}
+
+.igroup input:focus {
+	border: 1px solid hsl(201,100%,50%);
+}
+
+.sbtn{
+	color:white;
+	text-align: center;
+	padding: 0.5% 30%;
+	width:100%;
+	font-weight:lighter;
+	background-color:hsl(201,100%,50%,0.1) ;
+	border-radius:5px ;
+	font-size:1em;
+	min-height:2.5em;
+	border:1px solid hsl(201,100%,50%);
+	outline:none;
+	cursor:pointer;
+}
+
+.sbtn:hover {
+	border: 1px solid hsla(201,100%,50%,0.3);
+}
+
+.sbtn:focus {
+	border: 1px solid hsla(201,100%,50%,0.5);
+}
