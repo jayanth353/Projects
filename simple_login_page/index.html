@@ -4,24 +4,55 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles/form.css">
+	<script src="scripts/form.js" defer ></script>
 </head>
 <body>
-	 <div class="bodyContainer">
-		 <div class="loginContainer">
-			 <h3>Login</h3>
-			 <form action="">
-				 <div class="igroup">
-					 <label for="">Email</label>
-					 <input type="emial">
-				 </div>
-				 <div class="igroup">
-					 <label for="">Password</label>
-					 <input type="password">
-				 </div>
-				 <button type="submit" class="sbtn">Done</button>
-			 </form>
+	 
+		 <div class="con">
+			 <div class="card">
+					<div class="front">
+					<h3>Login</h3>
+					<form action="">
+						<div class="igroup">
+							<label for="">Email</label>
+							<input type="emial">
+						</div>
+						<div class="igroup">
+							<label for="">Password</label>
+							<input type="password">
+						</div>
+						<button type="submit" class="sbtn">Login</button>
+						<div class="msg"></div>
+					</form>
+					<p class="flip">Signup?</p>
+					</div>
+					<div class="back">
+					<h3>Sign up</h3>
+					<form action="">
+						
+						<div class="igroup">
+							<label for="">Username</label>
+							<input type="text">
+						</div>
+						<div class="igroup">
+							<label for="">Email</label>
+							<input type="emial">
+						</div>
+						<div class="igroup">
+							<label for="">Password</label>
+							<input type="password">
+						</div>
+						<div class="igroup">
+							<label for="">Confirm Password</label>
+							<input type="password">
+						</div>
+						<button type="submit" class="sbtn">Sign up</button>
+					</form>
+					<p class="flip1">Login Instead?</p>
+					</div>
+		     </div>
 		 </div>
-	 </div>
+	 
 </body>
 </html>
