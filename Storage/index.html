@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/b6fd831f4f.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Storage</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Cabin", "Courier New", Courier, monospace;
+            }
+            body {
+                background: #e6e6e6;
+            }
+            .center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .main-con {
+                width: 100vw;
+                height: 100vh;
+                background: linear-gradient(
+                        rgba(0, 0, 0, 0.1),
+                        rgba(0, 0, 0, 0.1)
+                    ),
+                    url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+                background-size: cover;
+            }
+            .con {
+                width: 90vw;
+                height: 80vh;
+                display: grid;
+                gap: 8vw;
+                grid-template-columns: 1fr 1fr;
+            }
+            .local,
+            .session {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+            .title {
+                margin-bottom: 5vh;
+                font-size: 3vw;
+                font-weight: bold;
+                color: white;
+            }
+            .count {
+                height: 50%;
+                width: 80%;
+                font-size: 3rem;
+                background: rgba(255, 165, 0, 0.8);
+                border-radius: 10%;
+                margin-bottom: 5vh;
+            }
+            .change {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                width: 70%;
+                height: 5%;
+                font-size: 2rem;
+                gap: 1vw;
+            }
+            .plus,
+            .minus,.reset{
+                text-align: center;
+                height: 7vh;
+                font-size: 2rem;
+                background: rgb(135, 206, 235, 0.7);
+                border-radius: 10%;
+                cursor: pointer;
+                outline:none;
+            }
+            .fa-solid{
+                font-size: 1.5rem;
+            }
+            @media screen and (min-width: 1300px) {
+                .count {
+                    width: 50%;
+                }
+                .change {
+                    width: 40%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-con center">
+            <div class="con">
+                <div class="local center">
+                    <p class="title">Local Storage</p>
+                    <h1 class="count center" id="local-count">0</h1>
+                    <div class="change">
+                        <button class="plus center" id="local-plus">+</button>
+                        <button class="reset center" id="reset-local">
+                            <i class="fa-solid fa-rotate"></i>
+                        </button>
+                        <button class="minus center" id="local-minus">-</button>
+                    </div>
+                </div>
+                <div class="session center">
+                    <p class="title">Session Storage</p>
+                    <h1 class="count center" id="session-count">0</h1>
+                    <div class="change">
+                        <button class="plus center" id="session-plus">+</button>
+                        <button class="reset center" id="reset-session"><i class="fa-solid fa-rotate"></i></button>
+                        <button class="minus center" id="session-minus">-</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./Storage.js"></script>
+    </body>
+</html>
